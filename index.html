@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Óptica Morelos | Examen de la vista sin costo en el centro de Reynosa (propuesta)</title>
+<meta name="description" content="Óptica en el centro de Reynosa con más de 22 años. Examen de la vista sin costo, armazones, micas y lentes de contacto. Abierto lunes a domingo, también días festivos.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400&family=Source+Serif+4:opsz,wght@8..60,400&family=Inter:wght@400&display=swap" rel="stylesheet">
+<style>
+/* Idea: la portada es una cartilla de agudeza visual; cada renglón más chico dice algo del negocio */
+:root{
+  --ink:#141414;        /* negro de su sitio */
+  --plum:#5B3291;       /* morado de su menú, oscurecido para texto */
+  --plum-dark:#432370;
+  --lav:#F2EDF8;
+  --white:#FFFFFF;
+  --paper:#FAFAF8;
+  --muted:#575460;
+  --line:#E2DEE8;
+  --open:#1E7A45;
+  --r:10px;
+  --display:"Rokkitt",Georgia,serif;
+  --body:"Karla",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:var(--plum)}
+:focus-visible{outline:3px solid #B98BEA;outline-offset:2px}
+h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;text-wrap:balance;color:var(--ink)}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}
+
+.proposal{background:var(--plum-dark);color:#fff;font-size:14px}
+.proposal .wrap{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.proposal button{background:#fff;color:var(--plum-dark);border:0;border-radius:6px;padding:6px 12px;font:inherit;font-weight:700;cursor:pointer}
+
+header.top{position:sticky;top:0;z-index:20;background:var(--ink);color:#fff}
+.top .wrap{display:flex;align-items:center;gap:18px;min-height:70px}
+.brand{flex:none}
+.brand img{height:46px;width:auto}
+nav.main{display:flex;gap:2px;margin-left:auto}
+nav.main a{color:#E8E5EE;text-decoration:none;font-weight:600;padding:8px 10px;border-radius:6px}
+nav.main a:hover{background:#2A2A2A;color:#fff}
+.status{flex:none;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#E8E5EE}
+.status i{width:9px;height:9px;border-radius:50%;background:#8A8A8A}
+.status.is-open i{background:#46C77B}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 20px;border-radius:8px;font:inherit;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;line-height:1.2;text-align:center}
+.btn-plum{background:var(--plum);color:#fff}
+.btn-plum:hover{background:var(--plum-dark)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-white{background:#fff;color:var(--ink)}
+
+/* Portada: cartilla */
+.hero{background:var(--paper);border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:56px}
+.chart{display:grid;justify-items:center;text-align:center;gap:6px;background:var(--white);border:1px solid var(--line);border-radius:4px;padding:34px 20px 26px;box-shadow:0 14px 34px rgba(20,20,20,.08)}
+.chart h1{display:grid;justify-items:center;gap:6px;font-weight:800;letter-spacing:.06em;line-height:.95}
+.chart h1 span{display:block}
+.r1{font-size:clamp(56px,9vw,112px)}
+.r2{font-size:clamp(36px,5.6vw,68px)}
+.r3{font-size:clamp(26px,3.8vw,46px);color:var(--plum)}
+.r4{font-family:var(--display);font-weight:700;font-size:clamp(18px,2.2vw,26px);letter-spacing:.08em}
+.r5{font-family:var(--display);font-weight:700;font-size:clamp(14px,1.5vw,17px);letter-spacing:.1em;color:var(--muted)}
+.chart .line{width:70%;height:2px;background:#C62E2E;margin:6px 0}
+.chart .nums{display:flex;justify-content:space-between;width:100%;font-size:12px;color:var(--muted);margin-top:8px}
+.hero .copy{display:grid;gap:18px}
+.hero .copy p{font-size:19px;color:var(--muted);max-width:30em}
+.hero .ctas{display:flex;gap:10px;flex-wrap:wrap}
+.hero dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0;font-size:16px}
+.hero dt{font-weight:700}
+.hero dd{margin:0;color:var(--muted)}
+
+section.block{padding:72px 0}
+section.alt{background:var(--lav)}
+.sec-head{display:grid;gap:10px;margin-bottom:28px;max-width:700px}
+.sec-head h2{font-size:clamp(36px,4.6vw,54px);font-weight:800}
+.sec-head p{color:var(--muted);font-size:18px}
+
+/* Servicios */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card .in{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:30px;font-weight:800}
+.card p{color:var(--muted)}
+.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.tags li{font-size:14px;font-weight:600;background:var(--lav);color:var(--plum-dark);border-radius:999px;padding:3px 10px}
+
+/* Marcas */
+.brands{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.brands .group{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.brands h3{font-size:26px;margin-bottom:12px}
+.brands ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.brands li{border:1px solid var(--line);border-radius:6px;padding:6px 12px;font-weight:600;font-size:16px}
+.acc{margin-top:18px;color:var(--muted)}
+
+/* Por qué */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why div{display:grid;gap:6px;align-content:start;border-top:3px solid var(--plum);padding-top:14px}
+.why b{font-family:var(--display);font-size:24px}
+.why span{color:var(--muted);font-size:16px}
+
+/* Contacto */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.contact dl{margin:0;display:grid;gap:14px}
+.contact dt{font-size:14px;color:var(--muted)}
+.contact dd{margin:0;font-size:19px;overflow-wrap:anywhere}
+.contact dd a{font-weight:700}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;font-size:17px}
+.hours b{font-weight:700}
+form.qf{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:grid;gap:14px}
+.qf label{display:block;font-weight:700;font-size:15px;margin-bottom:6px}
+.qf input,.qf select,.qf textarea{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--white);color:var(--ink)}
+.qf .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.qf .note{font-size:14px;color:var(--muted)}
+.qf .err{color:#B42318;font-size:14px}
+
+footer{background:var(--ink);color:#C9C5D0;padding:36px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer img{height:40px;width:auto}
+footer a{color:#fff}
+
+dialog{border:0;padding:0;border-radius:var(--r);width:min(580px,calc(100vw - 32px));max-height:calc(100vh - 32px);color:var(--ink)}
+dialog::backdrop{background:rgba(20,20,20,.6)}
+.dh{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--white)}
+.dh h2{font-size:30px}
+.x{background:none;border:0;font-size:28px;line-height:1;cursor:pointer;width:44px;height:44px;color:var(--ink)}
+.db{padding:16px 20px 22px}
+.db ol{margin:0;padding-left:20px;display:grid;gap:12px}
+.db b{display:block}
+.db span{color:var(--muted);font-size:15px}
+
+@media (max-width:1000px){
+  nav.main{display:none}
+  .status{margin-left:auto}
+  .svc{grid-template-columns:1fr 1fr}
+  .why{grid-template-columns:1fr 1fr}
+}
+@media (max-width:780px){
+  .hero .wrap,.brands,.contact{grid-template-columns:1fr}
+  .hero .wrap{padding-top:32px;padding-bottom:40px;gap:28px}
+  section.block{padding:52px 0}
+}
+@media (max-width:540px){
+  .svc,.why{grid-template-columns:1fr}
+  .brand img{height:36px}
+  .qf .row{grid-template-columns:1fr}
+  form.qf{padding:18px}
+  .status span{display:none}
+}
+</style>
+<style id="refero-theme">
+/* fonts: family=Bodoni+Moda:opsz,wght@6..96,400&family=Source+Serif+4:opsz,wght@8..60,400&family=Inter:wght@400 */
+/* Estilo Refero: Sigmaphoto, "monochrome gallery for precision instruments". Todo en peso 400, didone para titulares y serif para lectura, mucho blanco, esquinas rectas, sin sombras y un solo color (el morado de la óptica) en el botón principal. */
+:root{
+  --ink:#333333; --plum:#5B3291; --plum-dark:#432370; --lav:#FAF7EF;
+  --white:#FFFFFF; --paper:#FFFFFF; --muted:#666666; --line:#D9D9D9; --r:0px;
+  --display:"Bodoni Moda",Georgia,serif; --body:"Source Serif 4",Georgia,serif;
+}
+body{font-weight:400}
+h1,h2,h3{font-weight:400!important;letter-spacing:0}
+.block > .wrap > .sec-head{text-align:center;margin-left:auto;margin-right:auto;justify-items:center}
+.sec-head h2{font-size:clamp(34px,4.6vw,56px)}
+header.top{background:#fff;color:var(--ink);border-bottom:1px solid var(--line)}
+.brand img{filter:invert(1)}
+nav.main a{color:var(--ink);font-family:"Inter",system-ui,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+nav.main a:hover{background:transparent;text-decoration:underline}
+.status{color:var(--ink);font-family:"Inter",system-ui,sans-serif}
+.btn{border-radius:0;font-family:"Inter",system-ui,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:13px}
+.btn-plum{background:var(--plum)}
+.btn-white{background:#fff;border-color:var(--ink);color:var(--ink)}
+.btn-line{border-color:var(--ink)}
+.proposal{background:#333}
+.hero{background:#fff}
+.chart{border-radius:0;box-shadow:none;border:1px solid var(--line)}
+.chart h1{font-weight:400!important;letter-spacing:.04em}
+.r4,.r5{font-family:"Inter",system-ui,sans-serif;font-weight:400}
+.card{border-radius:0;border-color:var(--line)}
+.card img{border-radius:0}
+.tags li{border-radius:0;background:var(--lav);color:var(--ink);font-family:"Inter",system-ui,sans-serif;font-weight:400;font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+section.alt{background:var(--lav)}
+.brands .group{border-radius:0}
+.brands li{border-radius:0;font-weight:400}
+.why div{border-top:1px solid var(--ink)}
+.why b{font-weight:400}
+form.qf{border-radius:0}
+.qf input,.qf select,.qf textarea{border-radius:1px}
+footer{background:#fff;color:var(--muted);border-top:1px solid var(--line)}
+footer img{filter:invert(1)}
+footer a{color:var(--ink)}
+</style>
+</head>
+<body>
+
+<div class="proposal" role="note">
+  <div class="wrap">
+    <span>Vista previa de rediseño propuesta para Óptica Morelos. No es el sitio oficial.</span>
+    <button type="button" id="openChanges">Ver qué mejoramos</button>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="https://0201.nccdn.net/1_2/000/000/0f6/fec/logo--1-.png" alt="Óptica Morelos" width="101" height="46"></a>
+    <nav class="main" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#marcas">Marcas</a>
+      <a href="#contacto">Horario y ubicación</a>
+    </nav>
+    <span class="status" id="status" aria-live="polite"><i aria-hidden="true"></i><span id="statusText">Horario</span></span>
+    <a class="btn btn-white" href="tel:+528999223707" aria-label="Llamar al 899 922 3707">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <div class="chart">
+      <h1>
+        <span class="r1">EXAMEN</span>
+        <span class="r2">DE LA VISTA</span>
+        <span class="r3">SIN COSTO</span>
+      </h1>
+      <span class="line" aria-hidden="true"></span>
+      <p class="r4">ÓPTICA MORELOS REYNOSA</p>
+      <p class="r5">MÁS DE 22 AÑOS CUIDANDO TU VISTA</p>
+      <div class="nums" aria-hidden="true"><span>20/200</span><span>20/100</span><span>20/50</span><span>20/20</span></div>
+    </div>
+    <div class="copy">
+      <p>Ven por tu examen optométrico sin costo y elige tus lentes en el mismo lugar: armazones, micas y lentes de contacto, con los mejores precios de la zona.</p>
+      <div class="ctas">
+        <a class="btn btn-plum" href="tel:+528999223707">Llamar para tu cita</a>
+        <a class="btn btn-line" href="https://maps.google.com/?q=Porfirio+Diaz+960,+Centro,+Reynosa,+Tamaulipas" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+      <dl>
+        <dt>Abrimos</dt><dd>Lunes a domingo, también días festivos</dd>
+        <dt>Pagas con</dt><dd>Efectivo, Visa o Mastercard</dd>
+        <dt>Estamos en</dt><dd>Porfirio Díaz 960, Centro, entre Zaragoza y Morelos</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Todo para tu vista en un solo lugar</h2>
+      <p>Especialistas en constante actualización e instalaciones equipadas para atenderte de forma personal.</p>
+    </div>
+    <div class="svc">
+      <article class="card">
+        <img src="https://0201.nccdn.net/1_2/000/000/150/8ac/gal-1-800x600.jpg" alt="" loading="lazy">
+        <div class="in">
+          <h3>Examen de la vista</h3>
+          <p>Examen optométrico sin costo y estudios por computadora para saber exactamente qué graduación necesitas.</p>
+          <ul class="tags"><li>Sin costo</li><li>Estudio por computadora</li></ul>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://0201.nccdn.net/1_2/000/000/10f/317/gal-2-800x600.jpg" alt="" loading="lazy">
+        <div class="in">
+          <h3>Micas</h3>
+          <p>Graduamos tus lentes con la mica que va con tu día a día.</p>
+          <ul class="tags"><li>Visión sencilla</li><li>Bifocales</li><li>Progresivos</li><li>Antirreflejante</li><li>Crizal</li><li>Fotocromáticas</li><li>Transitions</li></ul>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://0201.nccdn.net/4_2/000/000/038/2d3/gal-3-800x600.jpg" alt="" loading="lazy">
+        <div class="in">
+          <h3>Armazones y lentes de contacto</h3>
+          <p>Amplio surtido de armazones de marca y lentes de contacto, también de color.</p>
+          <ul class="tags"><li>Armazones de marca</li><li>Lentes de contacto</li><li>De color</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="marcas">
+  <div class="wrap">
+    <div class="sec-head"><h2>Marcas que manejamos</h2></div>
+    <div class="brands">
+      <div class="group">
+        <h3>Armazones</h3>
+        <ul><li>Ray-Ban</li><li>Lacoste</li><li>Cat</li><li>Bebe</li><li>Guess</li><li>Banderas</li><li>Axess</li><li>Olive</li></ul>
+      </div>
+      <div class="group">
+        <h3>Lentes de contacto</h3>
+        <ul><li>SofLens</li><li>Bausch + Lomb</li><li>Acuvue 2</li><li>Air Optix</li><li>FreshLook Colors</li></ul>
+      </div>
+    </div>
+    <p class="acc">También tenemos accesorios: estuches, cordones, microfibras, líquido limpia micas, soluciones y estuches para lentes de contacto.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap why">
+    <div><b>Más de 22 años</b><span>Mejorando la vista de muchos pacientes en Reynosa.</span></div>
+    <div><b>Examen sin costo</b><span>Te revisamos antes de que elijas tus lentes.</span></div>
+    <div><b>Abrimos festivos</b><span>Lunes a domingo, incluidos los días festivos.</span></div>
+    <div><b>Mejores precios</b><span>Amplio surtido para todos los presupuestos.</span></div>
+  </div>
+</section>
+
+<section class="block alt" id="contacto">
+  <div class="wrap contact">
+    <div>
+      <div class="sec-head" style="margin-bottom:20px"><h2>Horario y ubicación</h2></div>
+      <dl>
+        <div><dt>Dirección</dt><dd>Porfirio Díaz 960, Centro, C.P. 88500, Reynosa, Tamps. Entre las calles Zaragoza y Morelos.</dd></div>
+        <div><dt>Horario</dt><dd><div class="hours"><b>Lunes a sábado</b><span>9:00 a 19:30</span><b>Domingo</b><span>10:00 a 16:00</span></div></dd></div>
+        <div><dt>Teléfonos</dt><dd><a href="tel:+528999223707">899 922 3707</a> / <a href="tel:+528993099760">899 309 9760</a></dd></div>
+        <div><dt>Correo</dt><dd><a href="mailto:contacto@opticamorelosreynosa.com.mx">contacto@opticamorelosreynosa.com.mx</a></dd></div>
+      </dl>
+    </div>
+    <form class="qf" id="qf" novalidate>
+      <h3 style="font-size:28px">Aparta tu examen</h3>
+      <div class="row">
+        <div><label for="qName">Nombre</label><input id="qName" autocomplete="name" required></div>
+        <div><label for="qPhone">Teléfono</label><input id="qPhone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="row">
+        <div><label for="qDay">Día que prefieres</label><input id="qDay" type="date"></div>
+        <div><label for="qWhat">Me interesa</label>
+          <select id="qWhat"><option>Examen de la vista</option><option>Lentes graduados</option><option>Lentes de contacto</option><option>Solo armazón</option></select>
+        </div>
+      </div>
+      <div><label for="qMsg">Comentarios</label><textarea id="qMsg" rows="3"></textarea></div>
+      <button class="btn btn-plum" type="submit">Enviar solicitud por correo</button>
+      <p class="err" id="qErr" role="alert" hidden>Escribe tu nombre y teléfono para confirmarte la cita.</p>
+      <p class="note">Se abre tu correo con la solicitud lista para la óptica.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="https://0201.nccdn.net/1_2/000/000/0f6/fec/logo--1-.png" alt="Óptica Morelos" width="88" height="40">
+    <span>Porfirio Díaz 960, Centro, Reynosa. <a href="tel:+528999223707">899 922 3707</a></span>
+    <a href="https://www.facebook.com/OpticaMorelos" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</footer>
+
+<dialog id="changes" aria-labelledby="cT">
+  <div class="dh"><h2 id="cT">Qué mejoramos</h2><button class="x" type="button" data-close aria-label="Cerrar">×</button></div>
+  <div class="db">
+    <ol>
+      <li><b>El nombre correcto</b><span>La sección de servicios actual dice "En Óptica Nueva Imagen te brindamos…", el nombre de otro negocio.</span></li>
+      <li><b>Marcas bien escritas</b><span>Se corrigieron "Ray Bay" (Ray-Ban), "Transistores" (Transitions), "Resh Look Color" (FreshLook Colors), "A Optix" (Air Optix) y "Cat,Bebe".</span></li>
+      <li><b>Sin textos del editor</b><span>El sitio actual muestra enlaces como "Haga clic para editar", "Fila contraíble" y "Column" que quedaron de la plantilla.</span></li>
+      <li><b>Sitio seguro (https)</b><span>Hoy el navegador marca el sitio como "No seguro" y el formulario de contacto envía datos sin cifrar.</span></li>
+      <li><b>El examen sin costo al frente</b><span>Era una línea perdida a mitad de un párrafo; es la mejor razón para visitarlos.</span></li>
+      <li><b>¿Están abiertos?</b><span>La página dice en tiempo real si la óptica está abierta según su horario.</span></li>
+      <li><b>Más rápido</b><span>La página actual tarda más de 4 segundos en responder.</span></li>
+    </ol>
+  </div>
+</dialog>
+
+<script>
+// Abierto ahora: L-S 9:00-19:30, D 10:00-16:00 (hora de Reynosa)
+(function(){
+  const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Matamoros" }));
+  const d = now.getDay(), m = now.getHours() * 60 + now.getMinutes();
+  const [o, c] = d === 0 ? [600, 960] : [540, 1170];
+  const open = m >= o && m < c;
+  const el = document.getElementById("status");
+  el.classList.toggle("is-open", open);
+  const hhmm = x => `${Math.floor(x / 60)}:${String(x % 60).padStart(2, "0")}`;
+  document.getElementById("statusText").textContent = open ? `Abierto hasta las ${hhmm(c)}` : "Cerrado ahora";
+})();
+
+document.getElementById("qf").addEventListener("submit", e => {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const err = document.getElementById("qErr");
+  if (!v("qName") || !v("qPhone")) { err.hidden = false; return; }
+  err.hidden = true;
+  const body = [`Nombre: ${v("qName")}`, `Teléfono: ${v("qPhone")}`, `Día preferido: ${v("qDay")}`, `Me interesa: ${v("qWhat")}`, `Comentarios: ${v("qMsg")}`].join("\n");
+  location.href = `mailto:contacto@opticamorelosreynosa.com.mx?subject=${encodeURIComponent("Cita: " + v("qWhat"))}&body=${encodeURIComponent(body)}`;
+});
+
+const dlg = document.getElementById("changes");
+document.getElementById("openChanges").addEventListener("click", () => dlg.showModal());
+document.querySelector("[data-close]").addEventListener("click", () => dlg.close());
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+</script>
+</body>
+</html>
